@@ -1,0 +1,104 @@
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="card">
+            <div class="card-body">
+                <form [formGroup]="addStudentForm">
+                    <div class="row">
+                        <div class="col-12">
+                            <h5 class="form-title"><span>Student Information</span></h5>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input formControlName="firstName" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input formControlName="lastName" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="form-group">
+                                <label>Student Id</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="gender">Gender</label>
+                                <select formControlName="gender" class="form-control select" (change)="changeGender($event)">
+                                    <option value="">Select Gender</option>
+                                    <option *ngFor="let gender of Gender">{{gender}}</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="dateOfBirth">Date of Birth</label>
+                                <div>
+                                    <input formControlName="dateOfBirth" type="date" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="class">Class</label>
+                                <input formControlName="class" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="religion">Religion</label>
+                                <input formControlName="religion" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="form-group">
+                                <label>Joining Date</label>
+                                <div>
+                                    <input type="date" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="phoneNumber">Mobile Number</label>
+                                <input formControlName="phoneNumber" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="admissionNumber">Admission Number</label>
+                                <input formControlName="admissionNumber" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="form-group">
+                                <label>Section</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="form-group">
+                                <label>Student Image</label>
+                                <input type="file" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="form-group">
+                                <label for="address">Permanent Address</label>
+                                <textarea formControlName="address" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary" (click)="onSubmit()" >Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
