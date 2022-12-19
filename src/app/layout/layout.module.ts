@@ -16,6 +16,11 @@ import { FooterComponent } from './components/footer/footer.component';
   imports: [
     CommonModule,
     LayoutRoutingModule
+  ],
+  exports:[
+    HeaderComponent,
+    LeftmenuComponent,
+    FooterComponent,
   ]
 })
 export class LayoutModule { }

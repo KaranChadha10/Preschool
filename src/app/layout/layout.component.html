@@ -1,0 +1,30 @@
+<nav class="navbar navbar-light navbar-vertical navbar-expand-xl">
+    <div class="d-flex align-items-center">
+        <div class="toggle-icon-wrapper">
+            <button class="btn navbar-toggler-humburger-icon navbar-vertical-toggle" data-bs-toggle="tooltip"
+                data-bs-placement="left" title="Toggle Navigation"><span class="navbar-toggle-icon"><span
+                        class="toggle-line"></span></span></button>
+        </div>
+        <a class="navbar-brand" href="index.html">
+            <div class="d-flex align-items-center py-3"><img class="me-2" src="assets/img/logos/Logo-4.png" alt=""
+                    width="140" /> 
+            </div>
+        </a>
+    </div>
+    <div>
+        <app-leftmenu></app-leftmenu>
+    </div>
+</nav>
+<div class="content">
+    <nav class="navbar navbar-light navbar-glass navbar-top navbar-expand">
+        <!--w3-include-html="include/navbar.html"-->
+        <div class="mobile-nav">
+            <app-header></app-header>
+        </div>
+    </nav>
+    <router-outlet></router-outlet>
+    <!--w3-include-html="include/footer.html"-->
+    <div>
+        <app-footer></app-footer>
+    </div>
+</div>

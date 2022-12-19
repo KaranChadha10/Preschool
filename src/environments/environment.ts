@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  url: 'http://localhost:4000'
+  url: 'https://639ec36c5eb8889197ec8d40.mockapi.io/'
 };
 
 /*
